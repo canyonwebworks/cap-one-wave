@@ -1,122 +1,122 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Cap One to Wave\n"
-"POT-Creation-Date: 2021-02-04 19:17-0800\n"
+"POT-Creation-Date: 2026-06-24 17:49-0600\n"
 "PO-Revision-Date: 2021-02-04 18:55-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: cap-one-wave.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: cap-one-wave.php:87
+#: cap-one-wave.php:139
 msgid "Go to the settings page"
 msgstr ""
 
-#: cap-one-wave.php:87
+#: cap-one-wave.php:139
 msgid "Settings"
 msgstr ""
 
-#: cap-one-wave.php:131
+#: cap-one-wave.php:173
 msgid "Cap One Wave"
 msgstr ""
 
-#: cap-one-wave.php:163
+#: cap-one-wave.php:199
 msgid "Cap One Wave Settings"
 msgstr ""
 
-#: cap-one-wave.php:165
+#: cap-one-wave.php:201
 #, php-format
 msgid ""
 "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Please check out the Cap "
-"One Wave documentation</a>."
+"One Wave plugin documentation</a>."
 msgstr ""
 
-#: cap-one-wave.php:167
-msgid "Have I helped?"
-msgstr ""
-
-#: cap-one-wave.php:180
+#: cap-one-wave.php:213
 msgid "Wave Full Access Token"
 msgstr ""
 
-#: cap-one-wave.php:184
+#: cap-one-wave.php:217
 #, php-format
 msgid ""
-"<a href=\"%s\" target=\"_blank\" rel=\"noopener\">You gotta set up a Wave "
-"API connection to get a token</a>."
+"<a href=\"%s\" target=\"_blank\" rel=\"noopener\">You must set up a Wave API "
+"connection to get a token</a>, and save it."
 msgstr ""
 
-#: cap-one-wave.php:189
+#: cap-one-wave.php:229
 msgid "Wave Business ID"
 msgstr ""
 
-#: cap-one-wave.php:193
+#: cap-one-wave.php:238
+msgid ""
+"No businesses were found on your Wave Apps account. You must set up a "
+"business and API access for this plugin to function."
+msgstr ""
+
+#: cap-one-wave.php:250
 #, php-format
 msgid ""
 "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">How to find your business "
-"ID?</a>"
+"ID manually</a>"
 msgstr ""
 
-#: cap-one-wave.php:198
+#: cap-one-wave.php:258
 msgid "Liability Account"
 msgstr ""
 
-#: cap-one-wave.php:208
+#: cap-one-wave.php:281
 msgid "(We recommend this be your Capital One liability account)"
 msgstr ""
 
-#: cap-one-wave.php:211
-msgid ""
-"Once your token and business ID are entered correctly, a pulldown will show "
-"here with all liability accounts."
-msgstr ""
-
-#: cap-one-wave.php:217
+#: cap-one-wave.php:286
 msgid "Expense Account"
 msgstr ""
 
-#: cap-one-wave.php:227
-msgid ""
-"(We recommend you use Uncategorized Expense unless you have another plan. A "
-"lot can be done here using plugin hooks...)"
+#: cap-one-wave.php:309
+msgid "No expense accounts found to list."
 msgstr ""
 
-#: cap-one-wave.php:230
-msgid ""
-"Once your token and business ID are entered correctly, a pulldown will show "
-"here with all expense accounts."
+#: cap-one-wave.php:322
+msgid "Hi, my name is Caroline. Have I helped?"
 msgstr ""
 
-#: cap-one-wave.php:258
+#: cap-one-wave.php:343
+#, php-format
 msgid ""
-"👋 <strong>Capital One to Wave</strong> requires some complex setup before it "
-"will work as a Wordpress plugin."
+"👋 <strong>Capital One to Wave</strong> requires the <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">WP Webhooks plugin</a> be installed and "
+"activated."
 msgstr ""
 
-#: cap-one-wave.php:258
+#: cap-one-wave.php:350
+msgid ""
+"👋 <strong>Capital One to Wave</strong> requires some complex setup before "
+"it will work as a WordPress plugin."
+msgstr ""
+
+#: cap-one-wave.php:350
 msgid ""
 "Your personal Wave API key and business account IDs must be provided in the "
 "code. Dig into the source code of capital-one-wave.php to enter missing PHP "
 "variable values."
 msgstr ""
 
-#: cap-one-wave.php:259
+#: cap-one-wave.php:351
+#, php-format
 msgid ""
-"Lost? Need this installed for you? Contact web@little-package.com to discuss "
-"rates."
+"Lost? Need this installed for you? Make contact via <a href=\"%s\" "
+"target=\"_blank\" rel=\"noopener\">canyonwebworks.com</a> to discuss rates."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
@@ -125,10 +125,10 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"This plugin helps enter Capital One charges into Wave Accounting "
-"transactions, saving on data entry time & cost"
+"Add Capital One charges as Wave Accounting transactions using Zapier email "
+"parsing & webhooks"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Little Package"
+msgid "Canyon Webworks"
 msgstr ""

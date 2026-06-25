@@ -1,18 +1,22 @@
 # Capital One Wave - A plugin for Wordpress
  
-Quite a few people upset that [Wave went ahead and changed data aggregators, moving to Plaid](https://support.waveapps.com/hc/en-us/articles/360001114443-Possible-integration-issue-with-Capital-One), and therefore losing connectivity with Capital One. Oh! The drama of forced data-entry! A lot of bookkeepers, accountants, small business owners, and other people likely to get upset about seemingly small things (which seem HUGE to them) are railing against Wave.
+Quite a few people upset that [Wave went ahead and changed data aggregators, moving to Plaid](https://support.waveapps.com/hc/en-us/articles/360001114443-Possible-integration-issue-with-Capital-One), and therefore losing connectivity with Capital One (in 2022/2023).
 
-I use Wave. My client uses Wave. I have a Capital One credit card. My client has a Capital One credit card. And so I decided that rather than railing, or waiting, I'd just create a workaround using Zapier and a Wordpress webhook endpoint, to at least move Capital One charges into Wave -- automagically. Here's what works:
+I decided that I'd just create a workaround using Zapier and a Wordpress webhook endpoint, to at least move Capital One charges into Wave -- automagically.
 
-## Required "Supplies"
-- A Wave Accounting accoun
+This plugin should only be used anymore if you're on a free Wave plan and are not concerned about security (since this plugin does not use OAuth).
+
+If this plugin is close to what you need but *not quite,* [reach out to discuss secure custom bookkeeping/etc API integrations with us](https://canyonwebworks.com)!
+
+## Requirements
+- A Wave Apps account
 - A Capital One credit card account
-- A [Zapier](https://zapier.com/) account (a free account will work)
-- A Wordpress site with the awesome [WP Webhooks plugin](https://wordpress.org/plugins/wp-webhooks/) installed
+- A [Zapier](https://zapier.com/) account (a free account should work)
+- A Wordpress site with the [WP Webhooks plugin](https://wordpress.org/plugins/wp-webhooks/) installed
 - This Cap One to Wave Wordpress plugin
 - Perhaps a PHP developer, PHP skills, and/or strong determination and a few pots of coffee in order to arrange and customize the setup.
 
-## Ready?
+## Setup
 
 ### Step 1
 Sign into [Zapier Parser](https://parser.zapier.com/login/) with your existing Zapier account (using the orange button) and create a mailbox. You will now have an email address that looks like *alphanumeric@robot.zapier.com*. The next screen will say "We're waiting..." Skip this by clicking "Skip Waiting." 
@@ -43,7 +47,7 @@ This means now that whenever there is a charge over $1 on your Capital One accou
 ### Step 3
 Time to set up a new Zap. The Zap trigger will be "Email Parser by Zapier." The trigger event will be "New Email." Next step is to choose the account. Select your Zapier Parser account where you just created a mailbox. Next, to set up a trigger, just choose the robot mailbox you just set up.
 
-OK, now, big detour.
+OK, now, big detour:
 
 ### Step 4
 Make sure that WP Webhooks is installed on your Wordpress site. It doesn't even have to be *your* Wordpress site. Technically, you could even borrow one for this, but... don't. Install the plugin and go to the WP Webhooks settings page (*yourWPsite.com/wp-admin/options-general.php?page=wp-webhooks-pro&wpwhprovrs=settings*). Scroll down to the "Activate 'Receive Data' Actions" header and activate the "custom_action" action. Click Save All.
@@ -54,7 +58,7 @@ Make sure that WP Webhooks is installed on your Wordpress site. It doesn't even 
 
 ### Step 5
 
-Install the Cap One to Wave plugin (this code) for your Wordpress site.  Once the plugin has been set up with a correct token and business ID, it will green light you by providing drop down lists of liability accounts (for your Anchor in the transaction) and expense accounts for balancing the transaction. The selections you make will show up in your Wave Transactions; categorize carefully.
+Install the Cap One to Wave plugin (this code) for your Wordpress site. Once the plugin has been set up with a [Wave Apps token](https://developer.waveapps.com/hc/en-us/articles/360020948171-Create-a-Wave-Account-and-Test-Businesses) and business ID, it will green light you by providing drop down lists of liability accounts (for your Anchor in the transaction) and expense accounts for balancing the transaction. The selections you make will show up in your Wave Transactions; categorize carefully.
 
 ### Step 6
 Back to the Zap. Add a second action - the "Webhooks by Zapier" type. The action event is "POST." The URL is your webhook URL from step 4a. Payload type is JSON. Complete the rest of the settings to look like this:
